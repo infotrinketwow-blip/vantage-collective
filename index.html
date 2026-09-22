@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vantage Collective — We Build Brands That Get Talked About</title>
+<meta name="description" content="Vantage Collective is a bold branding &amp; marketing agency. Ten-day sprints. Senior talent only. One uncomfortable idea, guaranteed.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ GRAIN / NOISE OVERLAY (fixed, whole page) ============ -->
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav" data-nav>
+  <div class="nav__inner">
+    <a href="#hero" class="nav__mark">VANTAGE<span class="nav__mark-dash">—</span>COLLECTIVE</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#proof">Work</a>
+      <a href="#process">Process</a>
+      <a href="#trust">Clients</a>
+    </nav>
+    <a href="#cta-close" class="btn btn--nav btn--stamp" data-stamp>Start the Sprint</a>
+    <button class="nav__burger" data-burger aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" data-mobile-menu>
+    <a href="#proof">Work</a>
+    <a href="#process">Process</a>
+    <a href="#trust">Clients</a>
+    <a href="#cta-close" class="btn btn--stamp btn--block" data-stamp>Start the Sprint</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__layers" aria-hidden="true">
+      <!-- assets/video/hero-loop.mp4 : looping high-energy hero backdrop (paper slam / spotlight flicker), with sound. See ASSETS.md -->
+      <video class="hero__video" id="heroVideo" data-speed="0.15" autoplay muted loop playsinline poster="assets/images/hero-torn-poster.jpg">
+        <source src="assets/video/hero-loop.mp4" type="video/mp4">
+      </video>
+      <div class="hero__scrim"></div>
+      <!-- assets/images/hero-torn-poster.jpg : now used only as the video's poster frame, not a separate opaque layer (it was fully hiding the video underneath) -->
+      <div class="hero__plate plate plate--hero" data-speed="0.25" data-asset="assets/images/hero-torn-poster.jpg" style="display:none;">
+        <span class="plate__tag">FIG.01 // hero-torn-poster.jpg</span>
+      </div>
+      <!-- assets/images/halftone-photocopy-grain.png : halftone/photocopy grain texture -->
+      <div class="hero__halftone plate plate--halftone" data-speed="0.4" data-asset="assets/images/halftone-photocopy-grain.png"></div>
+      <div class="hero__tape hero__tape--1" data-speed="0.55" aria-hidden="true"></div>
+      <div class="hero__tape hero__tape--2" data-speed="0.7" aria-hidden="true"></div>
+      <div class="hero__badge-shape" data-speed="0.6" aria-hidden="true">
+        <span>EST.</span><span>FOR BRIEFS<br>WITH NERVE</span>
+      </div>
+    </div>
+
+    <div class="hero__content">
+      <h1 class="hero__headline" data-collage-group>
+        <span class="hero__line" data-collage>YOUR AGENCY IS</span>
+        <span class="hero__line hero__line--stamped" data-collage>BORING YOU</span>
+        <span class="hero__line" data-collage>TO DEATH.</span>
+      </h1>
+      <p class="hero__sub" data-collage>We build brands that get talked about — not filed away.</p>
+      <div class="hero__ctas" data-collage>
+        <a href="#cta-close" class="btn btn--primary btn--stamp btn--lg" data-stamp>
+          <span>Start the Sprint</span>
+        </a>
+        <a href="#promise" class="btn btn--ghost btn--lg">
+          <span>Get the Unfiltered Audit</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-cue" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+
+    <button type="button" class="hero__sound-toggle" id="heroSoundToggle" aria-pressed="false">
+      <span class="hero__sound-icon" aria-hidden="true">🔇</span>
+      <span class="hero__sound-label">Sound off</span>
+    </button>
+  </section>
+
+  <!-- ============ PROBLEM / AGITATION ============ -->
+  <section class="problem" id="problem">
+    <!-- assets/images/taped-paper-collage-texture.jpg : taped-paper collage texture (ambient backdrop) -->
+    <div class="problem__texture plate plate--texture" data-asset="assets/images/taped-paper-collage-texture.jpg" aria-hidden="true"></div>
+    <div class="section-inner">
+      <div class="section-head" data-collage-group>
+        <h2 class="section-head__title" data-collage>SAME DECK.<br>DIFFERENT LOGO.<br>SOUND FAMILIAR?</h2>
+        <p class="section-head__body" data-collage>You've sat through the borrowed frameworks. You've waited six weeks for a concept a summer intern could've napkin-sketched.</p>
+      </div>
+
+      <ul class="problem__deck" data-collage-group>
+        <li class="problem__card" data-collage><span class="problem__pin" aria-hidden="true"></span>Strategy decks stitched together from borrowed frameworks, never an original point of view.</li>
+        <li class="problem__card" data-collage><span class="problem__pin" aria-hidden="true"></span>Six-week brief-to-concept cycles while your competitor ships.</li>
+        <li class="problem__card" data-collage><span class="problem__pin" aria-hidden="true"></span>Vanity metrics dressed up as strategy. No tie to revenue.</li>
+        <li class="problem__card" data-collage><span class="problem__pin" aria-hidden="true"></span>Junior staff quietly doing the work the senior partners pitched.</li>
+        <li class="problem__card" data-collage><span class="problem__pin" aria-hidden="true"></span>Safe, focus-grouped creative that's forgettable by Friday.</li>
+        <li class="problem__card" data-collage><span class="problem__pin" aria-hidden="true"></span>Approval layers stacked so high momentum dies in committee.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROMISE / SOLUTION ============ -->
+  <section class="promise" id="promise">
+    <div class="section-inner">
+      <div class="section-head section-head--right" data-collage-group>
+        <h2 class="section-head__title" data-collage>WE DON'T PITCH SAFE.<br>WE PITCH LOUD.</h2>
+        <p class="section-head__body" data-collage>Ten-day sprints. Senior talent only. One uncomfortable idea, guaranteed.</p>
+      </div>
+
+      <div class="promise__grid">
+        <div class="promise__stubs" data-collage-group>
+          <article class="stub stub--a" data-collage>
+            <span class="stub__num">10</span>
+            <h3 class="stub__title">The Sprint Model</h3>
+            <p class="stub__body">First concepts in 10 business days, built by a fixed four-person pod with no hand-off to a bench you never met.</p>
+          </article>
+          <article class="stub stub--b" data-collage>
+            <span class="stub__num">$</span>
+            <h3 class="stub__title">Revenue-Linked Reporting</h3>
+            <p class="stub__body">Every campaign ships with a pipeline and CAC dashboard. Not impressions. Not vanity screenshots.</p>
+          </article>
+          <article class="stub stub--c" data-collage>
+            <span class="stub__num">1</span>
+            <h3 class="stub__title">Point-of-View Guarantee</h3>
+            <p class="stub__body">Every strategy includes one deliberately uncomfortable recommendation. Contractually. Not optionally.</p>
+          </article>
+        </div>
+
+        <!-- assets/images/before-after-identity-split.jpg : before/after brand identity split-screen mockup -->
+        <div class="promise__plate plate plate--split" data-collage data-asset="assets/images/before-after-identity-split.jpg" style="background-image:url('assets/images/before-after-identity-split.jpg');background-size:cover;background-position:center;">
+          <div class="plate__split-before" style="background:none;">
+            <span class="plate__split-label">BEFORE</span>
+          </div>
+          <div class="plate__split-after" style="background:none;">
+            <span class="plate__split-label">AFTER</span>
+          </div>
+          <span class="plate__tag">FIG.03 // before-after-identity-split.jpg</span>
+        </div>
+      </div>
+
+      <div class="promise__cta" data-collage>
+        <a href="#" class="btn btn--primary btn--stamp" data-stamp><span>Get the Unfiltered Audit</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROOF / CASE STUDIES ============ -->
+  <section class="proof" id="proof">
+    <div class="section-inner">
+      <div class="section-head" data-collage-group>
+        <h2 class="section-head__title" data-collage>RECEIPTS,<br>NOT PROMISES.</h2>
+        <p class="section-head__body" data-collage>Fictional-for-now, plausible-on-purpose: the shape of results our sprints are built to produce.</p>
+      </div>
+
+      <div class="proof__grid" data-collage-group>
+
+        <article class="receipt receipt--1" data-collage>
+          <!-- assets/images/case-nocturne-billboard.jpg : nighttime billboard mockup -->
+          <div class="receipt__plate plate plate--billboard" data-asset="assets/images/case-nocturne-billboard.jpg" style="background-image:url('assets/images/case-nocturne-billboard.jpg');background-size:cover;background-position:center;">
+            <span class="plate__tag">FIG.04 // case-nocturne-billboard.jpg</span>
+          </div>
+          <div class="receipt__body">
+            <span class="receipt__client">NOCTURNE AUDIO</span>
+            <p class="receipt__result">3x organic mentions in 60 days.</p>
+            <p class="receipt__desc">A category-first launch campaign that got the internet arguing about a headphone brand, deliberately.</p>
+          </div>
+        </article>
+
+        <article class="receipt receipt--2" data-collage>
+          <div class="receipt__plate plate plate--flat" data-asset="assets/images/case-heartland-relaunch.jpg" style="background-image:url('assets/images/case-heartland-relaunch.jpg');background-size:cover;background-position:center;">
+            <span class="plate__tag">FIG.05 // case-heartland-relaunch.jpg</span>
+          </div>
+          <div class="receipt__body">
+            <span class="receipt__client">HEARTLAND MILLING CO.</span>
+            <p class="receipt__result">A 40-year-old company relaunched to feel brand-new.</p>
+            <p class="receipt__desc">Full identity overhaul that kept the equity and dropped the dust. Retail sell-through was up within the first quarter.</p>
+          </div>
+        </article>
+
+        <article class="receipt receipt--3" data-collage>
+          <div class="receipt__plate plate plate--flat" data-asset="assets/images/case-ferro-finch.jpg" style="background-image:url('assets/images/case-ferro-finch.jpg');background-size:cover;background-position:center;">
+            <span class="plate__tag">FIG.06 // case-ferro-finch.jpg</span>
+          </div>
+          <div class="receipt__body">
+            <span class="receipt__client">FERRO &amp; FINCH</span>
+            <p class="receipt__result">Pre-brief KPI hit in 3 weeks flat.</p>
+            <p class="receipt__desc">One uncomfortable idea, shipped as the whole campaign, not softened into the safe version by committee.</p>
+          </div>
+        </article>
+
+        <article class="receipt receipt--4" data-collage>
+          <div class="receipt__plate plate plate--flat" data-asset="assets/images/case-pulsegrid.jpg" style="background-image:url('assets/images/case-pulsegrid.jpg');background-size:cover;background-position:center;">
+            <span class="plate__tag">FIG.07 // case-pulsegrid.jpg</span>
+          </div>
+          <div class="receipt__body">
+            <span class="receipt__client">PULSEGRID</span>
+            <p class="receipt__result">Double-digit CAC drop in one quarter.</p>
+            <p class="receipt__desc">Rebrand plus a revenue dashboard the CFO actually reads. Proof the loud idea also pays for itself.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS (PINNED) ============ -->
+  <section class="process" id="process" data-pin-section>
+    <div class="process__pin" data-pin-inner>
+      <div class="section-inner process__inner">
+
+        <div class="section-head" data-collage-group>
+          <h2 class="section-head__title" data-collage>NO COMMITTEES.<br>NO GHOSTING.<br>NO BS.</h2>
+          <p class="section-head__body" data-collage>One pod, one point of contact, weekly builds you can see and kill fast.</p>
+        </div>
+
+        <!-- assets/images/corkboard-sprint-process.jpg : corkboard sprint-cards process visual -->
+        <div class="process__board plate plate--corkboard" data-asset="assets/images/corkboard-sprint-process.jpg" style="background-image:url('assets/images/corkboard-sprint-process.jpg');background-size:cover;background-position:center;">
+          <span class="plate__tag">FIG.08 // corkboard-sprint-process.jpg</span>
+
+          <ol class="process__steps" data-pin-steps>
+            <li class="process__step" data-pin-step="0">
+              <span class="process__day">DAY 1–2</span>
+              <h3>Immersion &amp; Teardown</h3>
+              <p>We audit your category, your last three campaigns, and every reason your last agency played it safe.</p>
+            </li>
+            <li class="process__step" data-pin-step="1">
+              <span class="process__day">DAY 3–6</span>
+              <h3>Concept Sprint</h3>
+              <p>One fixed four-person pod builds three real directions. No junior hand-off after the senior pitch.</p>
+            </li>
+            <li class="process__step" data-pin-step="2">
+              <span class="process__day">DAY 7–8</span>
+              <h3>Stress Test</h3>
+              <p>Every direction gets pushed against your brand risk tolerance, then one notch further.</p>
+            </li>
+            <li class="process__step" data-pin-step="3">
+              <span class="process__day">DAY 9–10</span>
+              <h3>Present &amp; Ship</h3>
+              <p>You see the work, kill what doesn't land, and walk away with ship-ready assets instead of a deck.</p>
+            </li>
+            <li class="process__step" data-pin-step="4">
+              <span class="process__day">WEEK 2+</span>
+              <h3>Build &amp; Report</h3>
+              <p>Your pipeline and CAC dashboard goes live. One point of contact for the life of the engagement.</p>
+            </li>
+          </ol>
+
+          <div class="process__progress" aria-hidden="true">
+            <div class="process__progress-bar" data-pin-progress></div>
+          </div>
+        </div>
+
+        <div class="process__cta">
+          <a href="#cta-close" class="btn btn--primary btn--stamp" data-stamp><span>Start the Sprint</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OBJECTION HANDLING (PEAK MOMENT) ============ -->
+  <section class="objection" id="objection" data-peak-section>
+    <div class="objection__flash" data-peak-flash aria-hidden="true"></div>
+    <div class="objection__halftone plate plate--halftone" data-asset="assets/images/halftone-photocopy-grain.png" aria-hidden="true"></div>
+
+    <div class="section-inner objection__inner">
+      <div class="section-head" data-collage-group>
+        <h2 class="section-head__title" data-collage>TOO BOLD FOR<br>YOUR BOARD?</h2>
+        <p class="section-head__body" data-collage>We stress-test every idea against your brand risk tolerance — then push it one notch further anyway.</p>
+      </div>
+
+      <div class="objection__meter" data-peak-meter>
+        <div class="meter">
+          <span class="meter__label meter__label--safe">SAFE</span>
+          <div class="meter__track">
+            <div class="meter__fill" data-peak-fill></div>
+            <div class="meter__needle" data-peak-needle></div>
+          </div>
+          <span class="meter__label meter__label--bold">BOLD</span>
+        </div>
+      </div>
+
+      <div class="objection__stamp" data-peak-stamp aria-hidden="true">GOOD.</div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST SIGNALS / CLIENTS ============ -->
+  <section class="trust" id="trust">
+    <div class="section-inner">
+      <div class="section-head" data-collage-group>
+        <h2 class="section-head__title" data-collage>PEOPLE WHO<br>STOPPED SETTLING.</h2>
+      </div>
+
+      <!-- assets/images/client-logo-wall-newsprint.jpg : client logo wall on newsprint texture -->
+      <div class="trust__wall plate plate--newsprint" data-asset="assets/images/client-logo-wall-newsprint.jpg" data-collage-group style="background-image:url('assets/images/client-logo-wall-newsprint.jpg');background-size:cover;background-position:center;">
+        <span class="plate__tag">FIG.09 // client-logo-wall-newsprint.jpg</span>
+        <div class="trust__logo" data-collage>NOCTURNE AUDIO</div>
+        <div class="trust__logo" data-collage>HEARTLAND MILLING CO.</div>
+        <div class="trust__logo" data-collage>FERRO &amp; FINCH</div>
+        <div class="trust__logo" data-collage>PULSEGRID</div>
+        <div class="trust__logo" data-collage>KESTREL BANK</div>
+        <div class="trust__logo" data-collage>KILN STUDIOS</div>
+        <div class="trust__logo" data-collage>KNOTWORK LOGISTICS</div>
+        <div class="trust__logo" data-collage>PALOMA BEVERAGE</div>
+        <div class="trust__logo" data-collage>RUNWELL HEALTH</div>
+        <div class="trust__logo" data-collage>KIOSK &amp; CO.</div>
+      </div>
+
+      <div class="trust__quotes" data-collage-group>
+        <figure class="quote quote--1" data-collage>
+          <!-- assets/images/founder-portrait-bw.jpg : high-contrast black-and-white founder portrait -->
+          <div class="quote__plate plate plate--portrait" data-asset="assets/images/founder-portrait-bw.jpg" style="background-image:url('assets/images/founder-portrait-bw.jpg');background-size:cover;background-position:center;"></div>
+          <blockquote>&ldquo;They didn't focus-group the fight out of it. Six weeks after launch our own investors were forwarding the campaign.&rdquo;</blockquote>
+          <figcaption>CMO, Series C Consumer Tech</figcaption>
+        </figure>
+
+        <figure class="quote quote--2" data-collage>
+          <div class="quote__plate plate plate--portrait" data-asset="assets/images/founder-portrait-bw.jpg" style="background-image:url('assets/images/founder-portrait-bw.jpg');background-size:cover;background-position:center;"></div>
+          <blockquote>&ldquo;We'd been the safe, forty-year-old brand for a decade. Vantage made us the one people screenshot again.&rdquo;</blockquote>
+          <figcaption>Marketing Director, Legacy Manufacturing</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA CLOSE ============ -->
+  <section class="cta-close" id="cta-close">
+    <!-- assets/images/cta-spotlight-dust.jpg : spotlight CTA background with dust particles -->
+    <div class="cta-close__plate plate plate--spotlight" data-asset="assets/images/cta-spotlight-dust.jpg" aria-hidden="true" style="background-image:url('assets/images/cta-spotlight-dust.jpg');background-size:cover;background-position:center;">
+      <span class="plate__tag">FIG.11 // cta-spotlight-dust.jpg</span>
+    </div>
+
+    <div class="section-inner cta-close__inner" data-collage-group>
+      <h2 class="cta-close__title" data-collage>STOP<br>BLENDING IN.</h2>
+      <p class="cta-close__sub" data-collage>One pod. Ten days. One idea your board will argue about.</p>
+
+      <div class="cta-close__buttons" data-collage>
+        <a href="mailto:hello@vantagecollective.example" class="btn btn--primary btn--stamp btn--xl" data-stamp>
+          <span>Pick a Fight With Your Category</span>
+        </a>
+        <div class="cta-close__buttons-row">
+          <a href="mailto:hello@vantagecollective.example" class="btn btn--ghost" data-stamp><span>Start the Sprint</span></a>
+          <a href="mailto:hello@vantagecollective.example" class="btn btn--ghost" data-stamp><span>Get the Unfiltered Audit</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section-inner footer__inner">
+    <a href="#hero" class="footer__mark">VANTAGE<span>—</span>COLLECTIVE</a>
+    <div class="footer__meta">
+      <a href="mailto:hello@vantagecollective.example">hello@vantagecollective.example</a>
+      <span class="footer__divider" aria-hidden="true">/</span>
+      <span>Sprints booking now</span>
+    </div>
+    <p class="footer__copy">&copy; <span data-year></span> Vantage Collective. All boldness reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
